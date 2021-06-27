@@ -1,0 +1,24 @@
+<h1>Count HTML</h1>
+
+The original FullText is having {{ Count }} words
+
+<h2>Find your original text below : </h2>
+	{{FullText}}
+
+<h3>Find frequency of the words below in dict format : </h3>
+
+	{{ worddict }}
+
+<h4> Find frequency of the words below in list format : </h4>
+
+{% for word, countfreq in leest %}
+
+{{ word }} - {{ countfreq }}
+
+<br/>
+
+{% endfor %}
+</br>
+<a href = "{% url 'home' %}"> Start again </a>
+
+	
